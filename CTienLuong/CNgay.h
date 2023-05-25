@@ -1,4 +1,7 @@
 #pragma once
+#include <iostream>
+using namespace std;
+
 class CNgay
 {
 private:
@@ -9,16 +12,3 @@ public:
 	void Nhap();
 	void Xuat();
 };
-void CNgay::Nhap()
-{
-	cout << "Nhap ngay: ";
-	cin >> Ngay;
-	cout << "Nhap thang: ";
-	cin >> Thang;
-	cout << "Nhap nam: ";
-	cin >> Nam;
-}
-void CNgay::Xuat()
-{
-	cout << Ngay << "/" << Thang << "/" << Nam;
-}

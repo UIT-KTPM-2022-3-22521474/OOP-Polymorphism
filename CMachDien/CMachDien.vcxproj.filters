@@ -15,45 +15,36 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaiToanTienLuong.cpp">
+    <ClCompile Include="BaiToanMachDien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CCongTy.cpp">
+    <ClCompile Include="CDienTro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CNgay.cpp">
+    <ClCompile Include="CMachDien.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CNhanVien.cpp">
+    <ClCompile Include="CSongSong.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CQuanLy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CSanXuat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CVanPhong.cpp">
+    <ClCompile Include="CNoiTiep.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CSanXuat.h">
+    <ClInclude Include="CSongSong.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CCongTy.h">
+    <ClInclude Include="CDienTro.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CNgay.h">
+    <ClInclude Include="CMachDien.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CNhanVien.h">
+    <ClInclude Include="CNoiTiep.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CQuanLy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CVanPhong.h">
+    <ClInclude Include="BaiToanMachDien.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

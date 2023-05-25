@@ -18,12 +18,27 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaiToanMachDien.cpp" />
+    <ClCompile Include="CDienTro.cpp" />
+    <ClCompile Include="CMachDien.cpp" />
+    <ClCompile Include="CNoiTiep.cpp" />
+    <ClCompile Include="CSongSong.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaiToanMachDien.h" />
+    <ClInclude Include="CDienTro.h" />
+    <ClInclude Include="CMachDien.h" />
+    <ClInclude Include="CNoiTiep.h" />
+    <ClInclude Include="CSongSong.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f8b57383-ed9b-451d-bb3d-9771d14854b8}</ProjectGuid>
-    <RootNamespace>CTienLuong</RootNamespace>
+    <ProjectGuid>{cafc8834-b928-4a7c-a874-5d31ebd84846}</ProjectGuid>
+    <RootNamespace>CMachDien</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>03. BaiToanMachDien</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,23 +141,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="CCongTy.cpp" />
-    <ClCompile Include="CNgay.cpp" />
-    <ClCompile Include="CNhanVien.cpp" />
-    <ClCompile Include="BaiToanTienLuong.cpp" />
-    <ClCompile Include="CQuanLy.cpp" />
-    <ClCompile Include="CSanXuat.cpp" />
-    <ClCompile Include="CVanPhong.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CCongTy.h" />
-    <ClInclude Include="CNgay.h" />
-    <ClInclude Include="CNhanVien.h" />
-    <ClInclude Include="CQuanLy.h" />
-    <ClInclude Include="CSanXuat.h" />
-    <ClInclude Include="CVanPhong.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

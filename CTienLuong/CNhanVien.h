@@ -1,4 +1,6 @@
 #pragma once
+#include "CNgay.h"
+
 class CNhanVien
 {
 protected:
@@ -11,27 +13,5 @@ public:
 	virtual void Xuat();
 	virtual void TinhLuong();
 	virtual int LayLuong();
-	virtual CNhanVien* TimKiem(char);
+	virtual CNhanVien* TimKiem(char*);
 };
-void CNhanVien::Nhap()
-{
-	return;
-}
-void CNhanVien::Xuat()
-{
-	return;
-}
-void CNhanVien::TinhLuong()
-{
-	return;
-}
-int CNhanVien::LayLuong()
-{
-	return Luong;
-}
-CNhanVien* CNhanVien::TimKiem(char ht)
-{
-	if (strcmp(HoTen, &ht) == 0)
-		return this;
-	return NULL;
-}
