@@ -2,8 +2,9 @@
 
 void CVanPhong::Nhap()
 {
-	cout << "Nhap ho ten nhan vien quan ly: ";
-	cin >> HoTen;
+	cout << "\nNhap ho ten nhan vien van phong: ";
+	cin.ignore();
+	cin.getline(HoTen, 30);
 	cout << "Nhap ngay sinh: ";
 	NgaySinh.Nhap();
 	cout << "Nhap luong co ban: ";
@@ -15,7 +16,7 @@ void CVanPhong::Nhap()
 }
 void CVanPhong::Xuat()
 {
-	cout << "Ho ten nhan vien quan ly: ";
+	cout << "\nHo ten nhan vien van phong: ";
 	cout << HoTen << endl;
 	cout << "Ngay sinh: ";
 	NgaySinh.Xuat();
@@ -27,7 +28,9 @@ void CVanPhong::Xuat()
 	cout << "Tro cap: ";
 	cout << TroCap << endl;
 	cout << "Luong: ";
+	TinhLuong();
 	cout << Luong;
+	cout << endl;
 }
 void CVanPhong::TinhLuong()
 {
@@ -35,6 +38,7 @@ void CVanPhong::TinhLuong()
 }
 int CVanPhong::LayLuong()
 {
+	TinhLuong();
 	return Luong;
 }
 CNhanVien* CVanPhong::TimKiem(char* ht)

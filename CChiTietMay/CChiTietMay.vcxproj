@@ -24,6 +24,7 @@
     <ProjectGuid>{23d0ee62-787a-460a-a841-e883e128cbc1}</ProjectGuid>
     <RootNamespace>CChiTietMay</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>01. BaiToanChiTietMay</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CChiTietMay.cpp" />
+    <ClCompile Include="BaiToanChiTietMay.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CChiTiet.h" />

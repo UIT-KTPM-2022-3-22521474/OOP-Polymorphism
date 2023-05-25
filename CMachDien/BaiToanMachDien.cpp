@@ -2,13 +2,12 @@
 #include"CDienTro.h"
 #include"CSongSong.h"
 #include"CNoiTiep.h"
-#include "BaiToanMachDien.h"
 
 int main()
 {
 	CMachDien* a = NULL;
 	int type;
-	cout << "Nhap loai (0. NT, 1. SS, 2. R): ";
+	cout << "Nhap loai (0. Noi tiep, 1. Song song, 2. Dien tro): ";
 	cin >> type;
 	switch (type)
 	{
@@ -22,8 +21,9 @@ int main()
 	a->Nhap();
 	cout << "Mach dien la: ";
 	a->Xuat();
+	cout << endl;
 	float r = a->TinhDienTro();
-	cout << "Dien tro la: ";
+	cout << "\nDien tro tuong duong la: ";
 	cout << r;
 	return 0;
 }

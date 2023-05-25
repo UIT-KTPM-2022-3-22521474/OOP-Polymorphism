@@ -7,7 +7,7 @@ void CSongSong::Nhap()
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		cout << "Nhap loai (0. Noi tiep, 1. Song song): ";
+		cout << "Nhap loai (0. Noi tiep, 1. Song song, 2. Dien tro): ";
 		cin >> type;
 		switch (type)
 		{

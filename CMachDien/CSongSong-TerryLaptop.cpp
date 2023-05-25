@@ -1,13 +1,13 @@
-#include "CNoiTiep.h"
+#include "CSongSong.h"
 
-void CNoiTiep::Nhap()
+void CSongSong::Nhap()
 {
 	cout << "Nhap so dien tro cua mach: ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		cout << "Nhap loai (0. Noi tiep, 1. Song song, 2. R): ";
+		cout << "Nhap loai (0. Noi tiep, 1. Song song): ";
 		cin >> type;
 		switch (type)
 		{
@@ -21,7 +21,7 @@ void CNoiTiep::Nhap()
 		ds[i]->Nhap();
 	}
 }
-void CNoiTiep::Xuat()
+void CSongSong::Xuat()
 {
 	cout << "So luong mach dien thanh phan: " << n << endl;
 	for (int i = 0; i < n; i++)
@@ -29,12 +29,12 @@ void CNoiTiep::Xuat()
 		ds[i]->Xuat();
 	}
 }
-float CNoiTiep::TinhDienTro()
+float CSongSong::TinhDienTro()
 {
 	float s = 0;
 	for (int i = 0; i < n; i++)
 	{
-		s += ds[i]->TinhDienTro();
+		s += 1 / ds[i]->TinhDienTro();
 	}
-	return s;
+	return 1 / s;
 }

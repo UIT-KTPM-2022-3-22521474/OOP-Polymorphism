@@ -2,13 +2,13 @@
 
 void CCongTy::Nhap()
 {
-	std::cout << "Nhap so luong nhan vien: ";
-	std::cin >> n;
+	cout << "Nhap so luong nhan vien: ";
+	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		std::cout << "Nhap loai nhan vien (0. San Xuat 1. Van Phong 2. Quan Ly): ";
-		std::cin >> type;
+		cout << "Nhap loai nhan vien (0. San Xuat 1. Van Phong 2. Quan Ly): ";
+		cin >> type;
 		switch (type)
 		{
 		case 0:
@@ -27,7 +27,7 @@ void CCongTy::Nhap()
 
 void CCongTy::Xuat()
 {
-	std::cout << "So luong nhan vien: " << n << std::endl;
+	cout << "So luong nhan vien: " << n << endl;
 	for (int i = 0; i < n; i++)
 		ds[i]->Xuat();
 }
@@ -35,16 +35,14 @@ void CCongTy::Xuat()
 void CCongTy::TinhLuong()
 {
 	for (int i = 0; i < n; i++)
-	{
 		ds[i]->TinhLuong();
-	}
 }
 
 int CCongTy::TinhTongLuong()
 {
 	int s = 0;
 	for (int i = 0; i < n; i++)
-		s += ds[i]->LayLuong();
+		s = s + ds[i]->LayLuong();
 	return s;
 }
 

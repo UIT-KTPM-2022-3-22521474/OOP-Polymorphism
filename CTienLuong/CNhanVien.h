@@ -4,7 +4,7 @@
 class CNhanVien
 {
 protected:
-	int Luong;
+	float Luong;
 	int LuongCoBan;
 	CNgay NgaySinh;
 	char HoTen[30];

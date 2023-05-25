@@ -9,8 +9,8 @@ void CDienTro::Nhap()
 }
 void CDienTro::Xuat()
 {
-	cout << "Ma so: " << MaSo << endl;
-	cout << "R = " << r;
+	cout << "\nMa so: " << MaSo << endl;
+	cout << "R = " << r << endl;
 }
 float CDienTro::TinhDienTro()
 {

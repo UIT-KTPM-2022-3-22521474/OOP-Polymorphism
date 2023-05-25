@@ -2,7 +2,7 @@
 
 void CSanXuat::Nhap()
 {
-	cout << "Nhap ho ten nhan vien san xuat: ";
+	cout << "\nNhap ho ten nhan vien san xuat: ";
 	cin.ignore();
 	cin.getline(HoTen, 30);
 	cout << "Nhap ngay sinh: ";
@@ -15,13 +15,14 @@ void CSanXuat::Nhap()
 
 void CSanXuat::Xuat()
 {
-	cout << "Ho ten nhan vien san xuat: " << HoTen << endl;
+	cout << "\nHo ten nhan vien san xuat: " << HoTen << endl;
 	cout << "Ngay sinh: ";
 	NgaySinh.Xuat();
 	cout << endl;
 	cout << "Luong co ban: " << LuongCoBan << endl;
 	cout << "So san pham: " << SoSanPham << endl;
-	cout << "Luong: " << Luong << endl;
+	TinhLuong();
+	cout << "Luong: " << Luong << endl << endl;
 }
 
 void CSanXuat::TinhLuong()
@@ -31,6 +32,7 @@ void CSanXuat::TinhLuong()
 
 int CSanXuat::LayLuong()
 {
+	TinhLuong();
 	return Luong;
 }
 

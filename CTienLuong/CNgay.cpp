@@ -2,7 +2,7 @@
 
 void CNgay::Nhap()
 {
-	cout << "Nhap ngay: ";
+	cout << "\nNhap ngay: ";
 	cin >> Ngay;
 	cout << "Nhap thang: ";
 	cin >> Thang;

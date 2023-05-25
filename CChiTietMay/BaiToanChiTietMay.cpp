@@ -9,7 +9,7 @@ int main()
 {
 	CMay may;
 	may.Nhap();
-	float s = may.TinhTien();
-	cout << s;
+	int s = may.TinhTien();
+	cout << "\nTong chi phi: " << s;
 	return 0;
 }

@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CChiTietMay", "CChiTietMay\CChiTietMay.vcxproj", "{23D0EE62-787A-460A-A841-E883E128CBC1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01. BaiToanChiTietMay", "CChiTietMay\CChiTietMay.vcxproj", "{23D0EE62-787A-460A-A841-E883E128CBC1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CTienLuong", "CTienLuong\CTienLuong.vcxproj", "{F8B57383-ED9B-451D-BB3D-9771D14854B8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02. BaiToanTienLuong", "CTienLuong\CTienLuong.vcxproj", "{F8B57383-ED9B-451D-BB3D-9771D14854B8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CMachDien", "CMachDien\CMachDien.vcxproj", "{CAFC8834-B928-4A7C-A874-5D31EBD84846}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03. BaiToanMachDien", "CMachDien\CMachDien.vcxproj", "{CAFC8834-B928-4A7C-A874-5D31EBD84846}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04. BaiToanCayThuMuc", "04. BaiToanCayThuMuc\04. BaiToanCayThuMuc.vcxproj", "{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{CAFC8834-B928-4A7C-A874-5D31EBD84846}.Release|x64.Build.0 = Release|x64
 		{CAFC8834-B928-4A7C-A874-5D31EBD84846}.Release|x86.ActiveCfg = Release|Win32
 		{CAFC8834-B928-4A7C-A874-5D31EBD84846}.Release|x86.Build.0 = Release|Win32
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Debug|x64.ActiveCfg = Debug|x64
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Debug|x64.Build.0 = Debug|x64
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Debug|x86.ActiveCfg = Debug|Win32
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Debug|x86.Build.0 = Debug|Win32
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Release|x64.ActiveCfg = Release|x64
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Release|x64.Build.0 = Release|x64
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Release|x86.ActiveCfg = Release|Win32
+		{D389FC76-C81B-49F2-85FB-4BBA318EAD1B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -14,6 +14,6 @@ int main()
 	a.Nhap();
 	a.Xuat();
 	int kq = a.TinhTongLuong();
-	cout << kq;
+	cout << "Tong luong: " << kq;
 	return 0;
 }
