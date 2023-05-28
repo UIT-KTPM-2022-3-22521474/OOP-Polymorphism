@@ -7,10 +7,11 @@ protected:
 	int n;
 	CChiTiet* ds[100];
 public:
-	virtual void Nhap();
-	virtual void Xuat();
-	virtual float TinhTien();
-	virtual CChiTiet* TimKiem(long);
+	void Nhap();
+	void Xuat();
+	float TinhTien();
+	CChiTiet* TimKiem(long);
+	int DemSoLuong();
 };
 
 void CChiTietPhuc::Nhap()
@@ -33,13 +34,17 @@ void CChiTietPhuc::Nhap()
 		ds[i]->Nhap();
 	}
 }
+
 void CChiTietPhuc::Xuat()
 {
-	cout << "\n Ma so: " << MaSo;
-	cout << "\n So luong chi tiet thanh phan: " << n;
+	cout << "\nMa so: " << MaSo << "." << endl;
+	cout << "So luong chi tiet thanh phan: " << n << ".";
 	for (int i = 0; i < n; i++)
+	{
 		ds[i]->Xuat();
+	}		
 }
+
 float CChiTietPhuc::TinhTien()
 {
 	float s = 0;
@@ -47,6 +52,7 @@ float CChiTietPhuc::TinhTien()
 		s = s + ds[i]->TinhTien();
 	return s;
 }
+
 CChiTiet* CChiTietPhuc::TimKiem(long ms)
 {
 	if (MaSo == ms)
@@ -58,4 +64,12 @@ CChiTiet* CChiTietPhuc::TimKiem(long ms)
 			return kq;
 	}
 	return NULL;
+}
+
+int CChiTietPhuc::DemSoLuong()
+{
+	int dem = 0;
+	for (int i = 0; i < n; i++)
+		dem = dem + ds[i]->DemSoLuong();
+	return dem;
 }

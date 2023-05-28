@@ -27,9 +27,12 @@
     <ClInclude Include="CThuMuc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CNgay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="BaiToanCayThuMuc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

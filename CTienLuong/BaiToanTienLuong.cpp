@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstring>
+#include<string>
 using namespace std;
 #include"CCongTy.h"
 #include"CNgay.h"
@@ -10,10 +10,25 @@ using namespace std;
 
 int main()
 {
+	cout << "Problem 02: Bai toan TienLuong - To Vinh Tien - 22521474." << endl;
 	CCongTy a;
 	a.Nhap();
 	a.Xuat();
-	int kq = a.TinhTongLuong();
-	cout << "Tong luong: " << kq;
+	int ss = a.TinhTongLuong();
+	cout << "\nTong luong cua cong ty la:	" << ss << ".";
+	char HoTen[30];
+	cout << "\nNhap ho ten cua nhan vien can tim kiem:	";
+	cin.ignore();
+	cin.getline(HoTen, 30);
+	CNhanVien* kq = a.TimKiem(HoTen);
+	if (kq != NULL)
+	{
+		cout << "\nDa tim thay nhan vien co ho ten:	" << HoTen << "." << endl;
+		kq->Xuat();
+	}
+	else
+	{
+		cout << "\nKhong tim thay nhan vien co ho ten:	" << HoTen << ".";
+	}
 	return 0;
 }

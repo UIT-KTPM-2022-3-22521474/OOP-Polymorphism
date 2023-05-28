@@ -10,15 +10,17 @@ public:
 	void Nhap();
 	void Xuat();
 	int TinhDungLuong();
+	int DemTapTin();
+	int DemThuMucCon();
 };
 void CDia::Nhap()
 {
-	cout << "Nhap so luong doi tuong luu tru: ";
+	cout << "\nNhap so luong doi tuong luu tru: ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		cout << "Nhap loai thanh phan (0. Tap tin, 1. Thu muc): ";
+		cout << "\nNhap loai thanh phan (0. Tap tin, 1. Thu muc): ";
 		cin >> type;
 		switch (type)
 		{
@@ -32,7 +34,7 @@ void CDia::Nhap()
 }
 void CDia::Xuat()
 {
-	cout << "\nSo luong doi tuong luu tru: " << n;
+	cout << "\nSo luong doi tuong luu tru: " << n << "." << endl;
 	for (int i = 0; i < n; i++)
 	{
 		ds[i]->Xuat();
@@ -46,4 +48,20 @@ int CDia::TinhDungLuong()
 		s += ds[i]->TinhDungLuong();
 	}
 	return s;
+}
+
+int CDia::DemTapTin()
+{
+	int dem = 0;
+	for (int i = 0; i < n; i++)
+		dem += ds[i]->DemTapTin();
+	return dem;
+}
+
+int CDia::DemThuMucCon()
+{
+	int dem = 0;
+	for (int i = 0; i < n; i++)
+		dem += ds[i]->DemThuMucCon();
+	return dem;
 }

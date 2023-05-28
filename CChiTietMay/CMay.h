@@ -11,16 +11,17 @@ public:
 	void Xuat();
 	float TinhTien();
 	CChiTiet* TimKiem(long);
+	int DemChiTietDon();
 };
 
 void CMay::Nhap()
 {
-	cout << "Nhap so luong chi tiet cua may: ";
+	cout << "\nNhap so luong chi tiet cua may: ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		cout << "Nhap loai (0. Don, 1. Phuc): ";
+		cout << "\nNhap loai (0. Don, 1. Phuc): ";
 		cin >> type;
 		switch (type)
 		{
@@ -33,7 +34,7 @@ void CMay::Nhap()
 }
 void CMay::Xuat()
 {
-	cout << "\n So luong chi tiet cua may: " << n;
+	cout << "\nSo luong chi tiet cua may: " << n;
 	for (int i = 0; i < n; i++)
 	{
 		ds[i]->Xuat();
@@ -50,6 +51,7 @@ CChiTiet* CMay::TimKiem(long ms)
 	}
 	return NULL;
 }
+
 float CMay::TinhTien()
 {
 	float s = 0;
@@ -58,4 +60,12 @@ float CMay::TinhTien()
 		s = s + ds[i]->TinhTien();
 	}
 	return s;
+}
+
+int CMay::DemChiTietDon()
+{
+	int dem = 0;
+	for (int i = 0; i < n; i++)
+		dem = dem + ds[i]->DemSoLuong();
+	return dem;
 }

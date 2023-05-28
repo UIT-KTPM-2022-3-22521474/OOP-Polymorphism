@@ -1,4 +1,6 @@
 #pragma once
+#include "CLuuTru.h"
+
 class CThuMuc:public CLuuTru
 {
 protected:
@@ -8,21 +10,23 @@ public:
 	void Nhap();
 	void Xuat();
 	int TinhDungLuong();
+	int DemThuMucCon();
+	int DemTapTin();
 };
 void CThuMuc::Nhap()
 {
-	cout << "Nhap ten thu muc: ";
+	cout << "\nNhap ten thu muc: ";
 	cin >> Ten;
 	cout << "Nhap ngay lap: ";
 	NgayLap.Nhap();
-	cout << "Nhap dung luong: ";
+	cout << "Nhap dung luong thu muc: ";
 	cin >> DungLuong;
 	cout << "Nhap so luong thanh phan: ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		cout << "Nhap loai thanh phan (0. Tap tin, 1. Thu muc): ";
+		cout << "\nNhap loai thanh phan (0. Tap tin, 1. Thu muc): ";
 		cin >> type;
 		switch (type)
 		{
@@ -41,6 +45,7 @@ void CThuMuc::Xuat()
 	NgayLap.Xuat();
 	cout << "\nDung luong: " << DungLuong;
 	cout << "\nSo luong thanh phan: " << n;
+	cout << endl;
 	for (int i = 0; i < n; i++)
 	{
 		ds[i]->Xuat();
@@ -54,4 +59,20 @@ int CThuMuc::TinhDungLuong()
 		s += ds[i]->TinhDungLuong();
 	}
 	return s;
+}
+
+int CThuMuc::DemTapTin()
+{
+	int dem = 0;
+	for (int i = 0; i < n; i++)
+		dem += ds[i]->DemTapTin();
+	return dem;
+}
+
+int CThuMuc::DemThuMucCon()
+{
+	int dem = 1;
+	for (int i = 0; i < n; i++)
+		dem += ds[i]->DemThuMucCon();
+	return dem++;
 }

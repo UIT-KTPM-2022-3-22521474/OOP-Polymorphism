@@ -2,12 +2,12 @@
 
 void CCongTy::Nhap()
 {
-	cout << "Nhap so luong nhan vien: ";
+	cout << "\nNhap so luong nhan vien: ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		cout << "Nhap loai nhan vien (0. San Xuat 1. Van Phong 2. Quan Ly): ";
+		cout << "\nNhap loai nhan vien (0. San xuat, 1. Van phong, 2. Quan ly): ";
 		cin >> type;
 		switch (type)
 		{
@@ -27,7 +27,7 @@ void CCongTy::Nhap()
 
 void CCongTy::Xuat()
 {
-	cout << "So luong nhan vien: " << n << endl;
+	cout << "\nSo luong nhan vien: " << n << endl;
 	for (int i = 0; i < n; i++)
 		ds[i]->Xuat();
 }

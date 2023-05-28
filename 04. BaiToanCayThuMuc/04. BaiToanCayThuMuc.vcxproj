@@ -128,12 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CLuuTru.h" />
+    <ClInclude Include="CNgay.h" />
     <ClInclude Include="CODia.h" />
     <ClInclude Include="CTapTin.h" />
     <ClInclude Include="CThuMuc.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="BaiToanCayThuMuc.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,12 +2,12 @@
 
 void CSongSong::Nhap()
 {
-	cout << "Nhap so dien tro cua mach: ";
+	cout << "\nNhap so dien tro cua mach : ";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		int type;
-		cout << "Nhap loai (0. Noi tiep, 1. Song song, 2. Dien tro): ";
+		cout << "\nNhap loai (0. Noi tiep, 1. Song song, 2. Dien tro): ";
 		cin >> type;
 		switch (type)
 		{
@@ -23,7 +23,7 @@ void CSongSong::Nhap()
 }
 void CSongSong::Xuat()
 {
-	cout << "So luong mach dien thanh phan: " << n << endl;
+	cout << "\nSo luong mach dien thanh phan: " << n << endl;
 	for (int i = 0; i < n; i++)
 	{
 		ds[i]->Xuat();

@@ -5,9 +5,10 @@
 
 int main()
 {
+	cout << "Problem 03: Bai toan MachDien - To Vinh Tien - 22521474." << endl;
 	CMachDien* a = NULL;
 	int type;
-	cout << "Nhap loai (0. Noi tiep, 1. Song song, 2. Dien tro): ";
+	cout << "\nNhap loai (0. Noi tiep, 1. Song song, 2. Dien tro): ";
 	cin >> type;
 	switch (type)
 	{
@@ -19,11 +20,10 @@ int main()
 		break;
 	}
 	a->Nhap();
-	cout << "Mach dien la: ";
+	cout << "\nMach dien la: ";
 	a->Xuat();
 	cout << endl;
 	float r = a->TinhDienTro();
-	cout << "\nDien tro tuong duong la: ";
-	cout << r;
+	cout << "Dien tro tuong duong la: " << r << "." << endl;
 	return 0;
 }
